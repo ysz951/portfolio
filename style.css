@@ -173,6 +173,39 @@ a:visited { color: #784a38; }
 a:hover { color: #6b6259; }
 a:active { color: #6b6259; }
 
+/* ------------button --------------*/
+.btn{
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #FEE2B3;
+  border-color: #777777;
+  padding: 1px;
+   border-radius: 10px;
+}
+
+.btn-primary{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  background-color: #FEE2B3;
+  border-color: #777777;
+  padding: 10px 10px;
+   border-radius: 20px;
+   
+}
+
+.btn-primary:hover{
+  background-color: #FEEFBF;
+  border-color: #777777;
+  border-width: 4px;
+  color: #999999;
+  cursor:pointer;
+}
+
+.btn-xl{
+  font-size: 36px;
+   padding: 15px 12px;
+   font-family: 'Source Code Pro', monospace;
+   border-radius: 40px;
+}
 
 /*--------- Introduction section---------- */
 .profile-image{
@@ -234,12 +267,13 @@ a:active { color: #6b6259; }
   text-align: center;
 }
 
-.service-list p{
+.service-item p{
   font-family: 'Alfa Slab One', cursive;
   text-align:center;
   margin-bottom: 70px;
   font-size: 40px;
   text-transform: uppercase;
+  color: black;
 }
 
 .service-list li{
@@ -300,35 +334,6 @@ justify-content: center;
 
 }
 
-/* ------------button --------------*/
-btn{
-  border-radius: 20px;
-  text-transform: uppercase;
-  color: black;
-  padding: 6px 4px;
-}
-
-.btn-primary{
-  font-family: 'Shadows Into Light', cursive;
-  background-color: #FEE2B3;
-  border-color: #777777;
-   border-radius: 5px;
-}
-
-.btn-primary:hover{
-  background-color: #FEEFBF;
-  border-color: #777777;
-  border-width: 4px;
-  color: #999999;
-  cursor:pointer;
-}
-
-.btn-xl{
-  font-size: 36px;
-   padding: 15px 12px;
-   font-family: 'Source Code Pro', monospace;
-   border-radius: 40px;
-}
 
 /*----------- gap -----------*/
 .gap{
