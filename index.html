@@ -187,12 +187,38 @@
                   <li><a>Branding & identity design</a></li>
                 </ol>
               </div>
-        </section>
+      </section>
         <hr>
         <!-- contact section -->
         <section id="Contact">
-          <h2>Contact</h2>
-            <div class="subscribe">
+          <h2>Contact</h2>   
+            <form
+              action="https://formspree.io/shengyang_zhou@hotmail.com"
+              method="POST"
+            >
+            
+            <div class="group group-sm">
+              <div class="item margin-r">
+              <label>
+                  Your Name:
+                  <input type="text" name="name">
+                </label>
+              </div>
+              <div class="item margin-l">
+                <label>
+                  Your Email:
+                  <input id="user-email" type="text" name="email">
+                </label>
+              </div>
+            </div>
+              <div class="message-box">
+              <label for="user-message">Message:</label>
+              <textarea id="user-message" name="message"></textarea>
+              <button type="submit">Submit</button>
+            </div>
+             </div>
+            </form>
+            <!-- <div class="subscribe">
             <p>Have a interest in? </p>
             <div class="gap"> </div>
             <a class="btn-primary" href = "mailto:shengyang_zhou@hotmail.com" target="_blank">
@@ -213,9 +239,9 @@
             </div>
             
           </div>
-            </div>
+            </div> -->
               
-       <div class="gap-xl"></div>
+       <!-- <div class="gap-xl"></div> -->
      
         </section>
     
@@ -226,6 +252,7 @@
             <div id="footer-content">
               <p>shengyang Zhou <span id="year">@ 2020</span> </p>
             </div>
+          
     </footer>
     <script src="script.js"></script>
   </body>
