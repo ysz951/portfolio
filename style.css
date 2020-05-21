@@ -264,15 +264,15 @@ a:active { color: #6b6259; }
 
 /*---------- Color setting------------ */
 
-#pink{
+.pink{
   color:#d43ca2;
 }
 
-#darkBlue{
+.darkBlue{
   color:#2d324e
 }
 
-#darkRed{
+.darkRed{
 
   color: rgb(53, 14, 14);
 
