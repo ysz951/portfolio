@@ -1,0 +1,423 @@
+
+
+/* -------------------------Mobile first ------------------*/
+/* -------  Structure ------- */
+
+body{color:#FFF;background:rgb(156, 146, 146);font-family: tahoma; }
+  /* ---navigation bar--- */
+header{
+  background-color: rgb(201, 185, 160);text-align: center;
+  color: #fff;font-family: Futura;
+  text-transform: uppercase; padding:20px; 
+position:fixed;width:100%;top:0;left:0;z-index:1;
+  
+}
+
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+  
+  text-align: center;
+}
+
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+
+#intro{
+  padding-top:200px;
+ }
+
+ #About{
+  padding-top:150px;
+ }
+
+ #Portfolio{
+  padding-top:150px;
+ }
+  
+  #Service{
+  padding-top:150px;
+ }
+
+  #Contact{
+  padding-top:150px;
+ }
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+ 
+  header h1 {
+    margin: 14px 0 14px 14px;
+    padding-top: 0;
+  }
+  
+  header nav {
+    margin-top: 8px;
+    
+  }
+/* ---main ----*/
+#intro{
+  padding-top:150px;
+ }
+#About{
+  padding-top:100px;
+ }
+
+ #Portfolio{
+  padding-top:100px;
+ }
+  
+  #Service{
+  padding-top:100px;
+ }
+
+  #Contact{
+  padding-top:100px;
+ }
+}
+
+/* ---main ----*/
+main{
+  font-size:24px;font-family: cursive;margin:0;padding:0;
+ }
+/*--- text setting --*/
+
+h3{
+  text-shadow:0 1px 2px black;
+  color: rgb(88, 79, 79);
+}
+
+p{
+  overflow-wrap: wrap;
+}
+
+/*-- footer-- */
+
+#footer-content{
+  background: #333333;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  margin:0;
+  padding:5px 0;
+}
+#footer-content p{
+  margin:0;
+  text-align: center;
+}
+ /* -------------group item-------- */
+.group{
+  display: flex;
+  flex-direction: column;
+}
+
+ .item{
+  flex: 1;
+
+ }
+
+/* -------------size setting-------- */
+
+
+.max-600-text{
+  width: 600px;
+  margin:auto;
+}
+
+/*------------ position setting------------ */
+.float-left{
+ float: left;
+ margin-right: 50px;
+}
+
+.mid{
+  text-align: center;
+}
+
+/* ----------link setting------- */
+a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+a:link { color: #784a38; }
+a:visited { color: #784a38; }
+a:hover { color: #6b6259; }
+a:active { color: #6b6259; }
+
+
+/*--------- Introduction section---------- */
+.profile-image{
+
+}
+
+.profile-image img{
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  /* margin-right: 100px; */
+}
+
+/*--------- About section| describe image ---------*/
+.descibe-image{
+
+}
+
+.descibe-image img{
+  width: 200px;
+  height: 200px;
+}
+
+
+.descibe-list ul{
+
+ padding-left: 0;
+}
+
+  /* image with white square background */
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/White-square.jpg");
+    height: 200px; 
+    width: 200px; 
+}
+
+
+/*-------- Project section ---------*/
+.subgroup img{
+  width: 300px;
+  height: 200px;
+ 
+}
+
+
+
+/* -------------Service section-------- */
+.comingSoon img{
+  width: 100%;
+}
+
+.service-list{
+  color:  black;
+  text-shadow: 0px 1px 3px white;
+  position: relative;
+  text-align: center;
+}
+
+.service-list p{
+  font-family: 'Alfa Slab One', cursive;
+  text-align:center;
+  margin-bottom: 70px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.service-list li{
+  margin-bottom: 50px;
+  font-family: 'Righteous', cursive;
+}
+
+.service-list li:hover{
+  background-color: white;
+}
+
+
+/*------ contact section ------*/
+.subscribe{
+  text-align:center;
+}
+.subscribe p{
+  font-family: 'Kalam', cursive;
+  font-size: 50px;
+  color: white;
+}
+
+/*---------- Color setting------------ */
+
+#pink{
+  color:#d43ca2;
+}
+
+#darkBlue{
+  color:#2d324e
+}
+
+#darkRed{
+
+  color: rgb(53, 14, 14);
+
+}
+
+#year{
+
+  color: #c02431;
+}
+ /*----------- flex setting ----------*/
+.flex-group{
+  display: flex;
+justify-content: center;
+
+}
+.flex-item{
+  display: inline-flex;
+margin: 0 30px;
+align-items: center;
+justify-content: center;
+
+}
+.flex-item img{
+  width: 60px;
+
+}
+
+/* ------------button --------------*/
+btn{
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: black;
+  padding: 6px 4px;
+}
+
+.btn-primary{
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #FEE2B3;
+  border-color: #777777;
+   border-radius: 5px;
+}
+
+.btn-primary:hover{
+  background-color: #FEEFBF;
+  border-color: #777777;
+  border-width: 4px;
+  color: #999999;
+  cursor:pointer;
+}
+
+.btn-xl{
+  font-size: 36px;
+   padding: 15px 12px;
+   font-family: 'Source Code Pro', monospace;
+   border-radius: 40px;
+}
+
+/*----------- gap -----------*/
+.gap{
+  height: 50px;
+}
+
+.gap-sm{
+  height: 10px;
+}
+
+.gap-xl{
+  height: 150px;
+}
+
+
+
+
+/* ------------------------desktop ---------------------------*/
+@media only screen and (min-width: 800px) {
+ .wrapper{
+   width: 800px;
+   margin: auto;
+ }
+
+ body{
+   text-align:initial;
+ }
+ /* ---------group and item---------- */
+  .group{
+    flex-direction: row;
+  }
+ .item-double{
+   flex:2
+ }
+
+ /*----------- gap -----------*/
+.gap{
+  height: 100px;
+}
+
+.gap-sm{
+  height: 50px;
+}
+
+.gap-xl{
+  height: 150px;
+}
+ 
+/* -----------position and size ------------------ */
+ .profile-image .item h2{
+   margin-top: 0;
+ }
+
+ .item.mid{
+   text-align: initial;
+ }
+
+/*--------- About section| describe image ---------*/
+.descibe-image{
+  
+  margin-left: 5%;
+}
+
+.descibe-image img{
+  width: 150px;
+  height: 150px;
+}
+
+
+.descibe-list{
+  padding-top: 10px;
+  font-size: 18px;
+}
+.badge{
+  width: 150px;
+  height: 150px;
+}
+
+/*-------- Project section ---------*/
+.subgroup img{
+  width: 240px;
+  height: 160px;
+ 
+}
+.subgroup{
+  padding: 0 10px;
+
+}
+.subgroup#right-line{
+  border-right: 1px solid black;
+}
+  }
