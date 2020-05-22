@@ -479,3 +479,575 @@ input[type=submit] {
 }
 
 
+
+
+/* -------------------------Mobile first ------------------*/
+/* -------  Structure ------- */
+
+body{color:#FFF;background:rgb(156, 146, 146);font-family: 'Source Sans Pro', sans-serif; }
+  /* ---navigation bar--- */
+header{
+  background-color: rgb(201, 185, 160);text-align: center;
+  color: #fff;font-family: Futura;
+  text-transform: uppercase; padding-top:5px; 
+position:fixed;width:100%;top:0;left:0;z-index:1;
+  
+}
+
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+
+header nav ul li {
+  list-style-type: none;
+  
+  text-align: center;
+}
+
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+
+#intro{
+  padding-top:120px;
+ }
+
+ #About{
+  padding-top:100px;
+ }
+
+ #Portfolio{
+  padding-top:100px;
+ }
+  
+  #Service{
+  padding-top:100px;
+ }
+
+  #Contact{
+  padding-top:0;
+ }
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-top:0;
+   
+  }
+ 
+ header h1{
+   padding-top: 3px;
+ }
+ 
+  header ul{
+    margin-top:13px;
+    margin-bottom: 13px;
+  }
+
+/* ---main ----*/
+#intro{
+  padding-top:80px;
+ }
+#About{
+  padding-top:30px;
+ }
+
+ #Portfolio{
+  padding-top:30px;
+ }
+  
+  #Service{
+  padding-top:30px;
+ }
+
+  #Contact{
+  padding-top:0;
+ }
+
+}
+
+/* ---main ----*/
+main{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin:0;padding:0 10px;
+ }
+/*--- text setting --*/
+
+h3{
+ 
+}
+
+p{
+  overflow-wrap: wrap;
+}
+
+/*-- footer-- */
+
+#footer-content{
+  background: #333333;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  margin:0;
+  padding:5px 0;
+}
+#footer-content p{
+  margin:0;
+  text-align: center;
+}
+ /* -------------group item-------- */
+.group{
+  display: flex;
+  flex-direction: column;
+}
+
+ .item{
+  flex: 1;
+
+ }
+
+/*------------ position and size------------ */
+.float-left{
+ float: left;
+ margin-right: 50px;
+}
+
+.mid{
+  text-align: center;
+}
+.align-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-project-list{
+  align-items: center;
+  justify-content: center;
+}
+.message-box{
+   width: 60%;
+   margin-left: 20%;
+   border-bottom: 1px solid black;
+   padding-bottom: 10px;
+}
+
+
+.group-sm{
+  width:60%;
+  margin-left: 20%;
+}
+/* ----------link setting------- */
+a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+a:link { color: #784a38; }
+a:visited { color: #784a38; }
+a:hover { color: #6b6259; }
+a:active { color: #6b6259; }
+
+/* ------------button --------------*/
+.icon-ok:before {
+    content: '\e812';
+}
+
+.btn{
+  font-family: Futura;
+  background-color: #FEE2B3;
+  font-size: 14px;
+  padding: 5px;
+   border-radius: 10px;
+   text-transform: uppercase;
+}
+
+.btn-primary{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  background-color: #FEE2B3;
+  border-color: #777777;
+  padding: 10px 10px;
+   border-radius: 20px;
+   
+}
+
+.btn-primary:hover{
+  background-color: #FEEFBF;
+  border-color: #777777;
+  border-width: 4px;
+  color: #999999;
+  cursor:pointer;
+}
+
+.btn-xl{
+  font-size: 36px;
+   padding: 15px 12px;
+   font-family: 'Source Code Pro', monospace;
+   border-radius: 40px;
+}
+
+
+/*--------- Introduction section---------- */
+.profile-image{
+
+}
+
+.profile-image img{
+  
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  /* margin-right: 100px; */
+}
+
+/*--------- About section| describe image ---------*/
+.descibe-image{
+
+}
+
+.descibe-image img{
+  width: 220px;
+  height: 220px;
+}
+
+
+.descibe-list ul{
+
+ padding-left: 20px;
+}
+
+  /* image with white square background */
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/White-square.jpg");
+    height: 220px; 
+    width: 220px; 
+}
+
+
+/*-------- Project section ---------*/
+.subgroup img{
+  width: 300px;
+  height: 200px;
+}
+
+
+.horizon {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:left;
+  padding-left: 25%;
+ 
+}
+.horizon li{
+   
+  list-style-type: none;
+   padding: 0 10px 0 0;
+  text-align: center;
+}
+
+.project-image img{
+  width: 200px;
+  height:200px;
+  border-radius: 100px;
+}
+
+
+/* -------------Service section-------- */
+.comingSoon img{
+ 
+  width: 100%;
+}
+
+.service-list{
+  color:  black;
+  text-shadow: 0px 1px 3px white;
+  position: relative;
+  text-align: center;
+}
+
+.service-item p{
+  font-family: 'Alfa Slab One', cursive;
+  text-align:center;
+  margin-bottom: 70px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.service-list li{
+  margin-bottom: 50px;
+  font-family: 'Righteous', cursive;
+}
+
+.service-list li:hover{
+  background-color: white;
+}
+
+
+
+/*---------- Color setting------------ */
+
+.pink{
+  color:#d43ca2;
+}
+
+.darkBlue{
+  color:#2d324e
+}
+
+.darkGreen{
+  color:#09380d;
+}
+
+.darkBrown{
+  color:#574b08;
+}
+.darkBrown:hover{
+  color:#574b08;
+}
+
+.darkRed{
+
+  color: rgb(53, 14, 14);
+
+}
+
+.lightGrey{
+  color:rgba(214, 206, 206, 0.781);
+}
+
+.lightGrey:hover{
+  color:rgba(214, 206, 206, 0.781);
+}
+
+.upper{
+  font-family: Futura;
+  text-transform: uppercase
+}
+.textShadow{
+    text-shadow:0 1px 2px black;
+  color: rgb(88, 79, 79);
+}
+
+#year{
+
+  color: #c02431;
+}
+ /*----------- flex setting ----------*/
+.flex-group{
+  display: flex;
+justify-content: center;
+/* justify-content: space-between; */
+margin-top: 20px;
+margin-bottom:10px;
+
+}
+.flex-item{
+  display: inline-flex;
+margin: 0 10px;
+align-items: center;
+justify-content: center;
+
+}
+.flex-item img{
+  width: 30px;
+
+}
+
+
+/*----------- gap -----------*/
+.gap{
+  height: 30px;
+}
+
+.gap-sm{
+  height: 10px;
+}
+
+.gap-xl{
+  height: 150px;
+}
+
+
+
+
+/* ------------------------desktop ---------------------------*/
+@media only screen and (min-width: 800px) {
+ .wrapper{
+   width: 800px;
+   margin: auto;
+ }
+
+ body{
+   text-align:initial;
+ }
+
+
+ /* ---------group and item---------- */
+  .group{
+    flex-direction: row;
+  }
+ .item-double{
+   flex:2
+ }
+
+ /*----------- gap -----------*/
+.gap{
+  height: 30px;
+}
+
+.gap-sm{
+  height: 50px;
+}
+
+.gap-xl{
+  height: 150px;
+}
+ 
+/* -----------position and size ------------------ */
+ .profile-image .item h2{
+   margin-top: 0;
+ }
+
+
+ .item.mid{
+   text-align: initial;
+ }
+
+.align-project{
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  margin-right: 20px;
+ 
+}
+
+
+.margin-l{
+  margin-left:50px;
+}
+.margin-r{
+  margin-right:50px;
+}
+
+.tot-group{
+display: flex;
+
+  justify-content: center;
+}
+
+.small-size{
+  width: 400px;
+}
+
+/*--------- About section| describe image ---------*/
+.descibe-image{
+  
+  /* margin-left: 5%; */
+}
+
+.descibe-image img{
+  width: 150px;
+  height: 150px;
+}
+
+
+.descibe-list{
+  font-size: 14px;
+}
+
+.descibe-list ul{
+  line-height: 1.5em; 
+}
+
+.badge{
+  width: 150px;
+  height: 150px;
+}
+
+/*-------- Project section ---------*/
+.subgroup img{
+  width: 240px;
+  height: 160px;
+ 
+}
+.subgroup{
+  padding: 0 10px;
+
+}
+
+
+.subgroup#right-line{
+  border-right: 1px solid black;
+}
+
+.horizon {
+  padding-left: 0;
+}
+
+
+
+}
+
+  /*--------- contact -------*/
+  
+form {
+  padding-right: 10px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid black
+}
+
+form textarea {
+  height: 160px;
+}
+
+.contact-image{
+  width: 40%;
+}
+
+input[type=submit] {
+    width: 200px;
+    
+}
+
+
