@@ -47,7 +47,9 @@ header nav ul li a {
   padding: 0 20px 0 0;
 }
 
-
+#start{
+  padding-top:91px;
+}
 #intro{
   padding-top:120px;
  }
@@ -69,6 +71,8 @@ header nav ul li a {
  }
 
 @media all and (min-width: 800px) {
+
+
   header {
     display: flex;
     justify-content: space-between;
@@ -86,6 +90,10 @@ header nav ul li a {
   }
 
 /* ---main ----*/
+#start{
+  padding-top:44px;
+}
+
 #intro{
   padding-top:80px;
  }
@@ -286,7 +294,7 @@ a:active { color: #6b6259; }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  padding-left:0;
   justify-content: center;
  
 }
@@ -535,7 +543,7 @@ display: flex;
 }
 
 .horizon {
-  padding-left:0;
+  
    justify-content: flex-start;
 }
 
