@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Zhou's portfolio demo 1</title>
+    <title>Zhou's portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
        <!-- import font style -->
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Sans+Pro&family=Shadows+Into+Light&family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -16,21 +16,22 @@
     <!-- Heading -->
     <header>
     
-		<h1><span class="darkBlue">Shengyang Zhou</span></h1>
+		<h1 class="darkBlue">Shengyang Zhou</h1>
 		<nav>
 			<ul id="menu">
-				<li><a href="#">Home</a></li>
-				<li><a href="#About">About</a></li>
-				<li><a href="#Portfolio">Portfolio</a></li>
-				<li><a href="#Contact">Contact</a></li>
+        <li><p class="about_nav">About Me</p></li>
+        <li><p class="project_nav">Project</p></li>
+        <li><p class="contact_nav">Contact</p></li>
 			</ul>
 		</nav>
    
 	</header>
     
     <main class="wrapper">
-      <!-- introduction section -->
-      <section id="intro">
+      <!-- about section -->
+      <section id="About">
+        <h2 class="red">About Me</h2>
+        <div class="profile-image-tot">
           <div class="profile-image group">
             <div class= "item align-center">
      
@@ -38,11 +39,11 @@
               
             </div>
             <div class="item item-double mid align-center">
-              <div  class=" profile-list">
-              <h2>Who is this guy?</h2>
-              <h3 class="textShadow">A Master Student in Engineering</h3>
+              <div  class="profile-list">
+              <h3>Who is this guy?</h3>
+              <h4>A Master Student in Engineering</h4>
               
-              <ul>
+              <ul class="profile_list">
                 
                 <li> Located at: Waco, TX</li>
                 <li> Educated in: Baylor University</li>
@@ -50,189 +51,131 @@
               </ul>
               </div>
             </div>
-           </div>
-          <div>
-          <p>My name is <span class="darkRed">Shengyang Zhou</span>. I’m mainly responsible for algorithm optimization and GUI design in my graduate research group, where I realized the importance of software. The software industry is fascinating because of the innovation it sparks and there’s always a new challenge in software engineering. I like to deal with the challenge because it will increase my ability to solve problems. </p>
-          <P>As an MEng student, I can program in <span class="darkBlue">Python, Java, JavaScript, and C++.</span>
-          <p>If you have any questions, please don’t hesitate to <a href="#Contact">let me know!</a></p>
           </div>
-      </section>
-      <hr>
-      <!-- about section -->
-      <section id="About">
-        <h2>About Me</h2>
-        <p>As a graduate student, my work and life are inseparable from the network. I browse various and numerous web pages to search for information or relax every day. I realize <span class="darkRed">web development</span> is a work of art. We can enjoy developing novel algorithms to get things done faster or elaborately design beautiful interfaces. Combining these works will further create more great techniques and products, which inspires my passion for <span class="darkRed">web development</span>.</p> 
-         <p>Thus, I begin my journey to becoming a software engineer with purpose and look forward to a delicate web page built by myself.</p>
-      
-        <div class="descibe-image group">
-              <div class= "item align-center">
-                  <div class="badge">
-                 <img src="images/brain.png"  alt="Think"/>
-                  </div>
-              </div>
-              <div class="item">
-                 <div class="descibe-list">
-                      <ul>
-                      <li>I am a <span class="darkRed">self-motivated</span> and <span class="darkRed">innovative</span> learner who continually pursue new goals and create things. </li>
-                      <li>I like thinking and consider more optimal methods to solve problems.</li>
-                      <li>Asking questions and searching for additional information to strengthen knowledge is also my characteristic. </li>
-                      </ul> 
-                  </div>      
-              </div>
-             
         </div>
-        <br>
-        <div class="descibe-image group">
-              <div class= "item align-center">
-                 <div class="badge">
-                  <img src="images/teamwork.png"  alt="teamwork"/>
-                  </div>
-              </div>
-              <div class="item">
-                 <div class="descibe-list">
-                      <ul>
-                      <li> As a graduate research assistant, I love to <span class="darkRed">explore and study</span> new things. There are always difficulties in the research and I never give up easily and stop making progress.  </li>
-                <li> Research experience in a group let me know the importance of teamwork. I am an <span class="darkRed">enthusiastic team player</span> and enjoy sharing information with other people.</li>
-                      </ul> 
-                  </div>      
-              </div>
-             
-        </div>
-        <br>
-        <div class="descibe-image group">
-              <div class= "item align-center">
-                <div class="badge">
-                 <img src="images/hobby.png"  alt="hobby"/>
-                 </div>
-              </div>
-              <div class="item">
-                 <div class="descibe-list">
-                      <ul>
-                      <li> I love to cook which gives me a chance to enjoy my work. And adjusting the proportion of spice to season food let me know how to <span class="darkRed">manage the sources</span> to get a better solution. 
-                         </li>
-                      <li> Travel is also my hobby, during which I need to adapt to different environments. Meeting people from all around the world <span class="darkRed">broadens my sight</span> and empowers me to see the world from different perspectives.</li>
-                      </ul> 
-                  </div>      
-              </div>
-             
-        </div>
-        
-        <div class="comingSoon">
-            <img src="images/coming-soon.png" alt="comingsoon">
-
-         </div>
-          <!-- service-list -->
-          <div class="service-item">  
-                <p>Future service will include</p>
-                <ol class="service-list"> 
-                  
-                  <li><a>Custom Web Design and Development</a></li> 
-                  <li><a>Mobile web design</a></li>
-                  <li><a>Web applications</a></li>
-                  <li><a>Branding & identity design</a></li>
-                </ol>
-              </div>
-
-        <p>If you're looking to hire a new software engineer, please <a href="#Contact">reach out!</a> I can't wait to work with other people to develop great softwares.</p>
-      
+        <div>
+        <p>As a graduate student, my work and life are inseparable from the network. I browse various and numerous web pages to search for information or relax every day. I realize <span class="darkBrown">web development</span> is a work of art, which combines clean logic, beautiful design and constant innovation, and desire to start a career as <span class="darkBrown">Software Engineer</span>.</p> 
+        <p> I love to cook which gives me a chance to enjoy my work. And adjusting the proportion of spice to season food let me know how to <span class="darkRed">manage the sources</span> to get a better solution. 
+        </p>
     </section>
-     <hr>
-    <!-- portfolio section -->
-    <section id="Portfolio">
-      <h2>Portfolio</h2>
-      <p class="pink">I have not developed projects yet. Thus, I just set the placeholder content.</p> 
-      <div class="project-image group">
-              <div class= "item align-project">
-                  
-                 <a href="https://github.com/ysz951?tab=projects" target="_blank"><img src="images/web-design.png"  alt="project"/></a>
-                  
-              </div>
-              <div class="item mid">
-                <h3 class="upper">SYZ.com</h3>
-               
-                <ul class="horizon">
-                  <li><a  class="btn darkBrown">front-end</a></li>
-                  <li><a  class="btn lightGrey">back-end</a></li>
-                 
-                </ul>
-             
-                <p>This App is for....</p>
-             
-                   <!-- <p><a class="btn">213</a></p>   
-                   <p>tete</p> -->
-              </div>
-             
-        </div>
-       
-      </section>
-      <hr>
     
-        
-        <!-- contact section -->
-        <section id="Contact">
-          <h2>Contact</h2>   
-           <form
-              action="https://formspree.io/shengyang_zhou@hotmail.com"
-              method="POST"
-            >
-           <div class="tot-group">
-           
-            <div class="group small-size">
-             
-              <div class="item margin-r">
-                <label>
-                  Your Name:
-                  </label>
-                  <input type="text" name="name" required>
-                
+    <!-- portfolio section -->
+    <section id="Project">
+      <h2 class="red">Project</h2>
+      <div class="project-image group">
+        <div class= "item align-project">
+            <a href="https://enjoy-cook-app.vercel.app/" target="_blank"><img src="images/enjoy-cook.png"  alt="project"/></a>
             
-              </div>
-              <div class="item margin-l">
-                <label for="user-email">Email: </label>
-                 <input id="user-email" type="email" name="email" required>
-                
-               
-              </div>
+        </div>
+        <div class="item project-descib">
+          <h3>Enjoy Cook</h3>
+          <p>Full-stack online recipes search & share app. Find you want, make you like!</p>
+          <p class="Futura Italic">React, Node.js, RESTful API and Postgres SQL</p>
+          <ul class="project-link">
+            <li><a href="https://github.com/ysz951/enjoy-cook-app" class="Futura repo-link">FRONT-END REPO</a></li>
+            <li><a href="https://github.com/ysz951/enjoy-cook-api"  class="Futura repo-link">BACK-END REPO</a></li>
+          </ul>
+        </div>       
+      </div>
+      <div class="project-image group">
+        <div class= "item align-project">
+            <a href="https://enjoy-cook-app.vercel.app/" target="_blank"><img src="images/dont-forget.png"  alt="project"/></a>
+            
+        </div>
+        <div class="item project-descib">
+          <h3>Don't Forget</h3>
+          <p>A personal shopping memo app, help user not forget oncoming shopping items.</p>
+          <p class="Futura Italic">React, Node.js, RESTful API and Postgres SQL</p>
+          <ul class="project-link">
+            <li><a href="https://github.com/ysz951/dont-forget-app" class="Futura repo-link">FRONT-END REPO</a></li>
+            <li><a href="https://github.com/ysz951/dont-forget-api"  class="Futura repo-link">BACK-END REPO</a></li>
+          </ul>
+        </div>       
+      </div>
+      <div class="project-image group">
+        <div class= "item align-project">
+            <a href="https://lookforvenues.co/" target="_blank"><img src="images/global-venue-finder.png"  alt="project"/></a>
+            
+        </div>
+        <div class="item project-descib">
+          <h3>Global Venue Finder</h3>
+          <p>An online venue search application. Users can search for the venue they are interested in and filter results by inputting detailed parameters.</p>
+          <p class="Futura Italic">HTML5, CSS3, JavaScript with jQuery. Google & Foursquare API.</p>
+          <ul class="project-link">
+            <li><a href="https://github.com/ysz951/Globa-Venue-Finder" class="Futura repo-link">FRONT-END REPO</a></li>
+          </ul>
+        </div>       
+      </div>
+      </section>    
+        <!-- contact section -->
+      <section id="Contact">
+       
+        <h2 class="red">Contact</h2>   
+          <form
+            action="https://formspree.io/shengyang_zhou@hotmail.com"
+            method="POST"
+          >
+          <div class="tot-group">
+          
+          <div class="group small-size">
+            
+            <div class="item margin-r">
+              <label for="user-name">
+                Your Name:
+                </label>
+                <input id ="user-name" type="text" name="name" required>
+              
+          
+            </div>
+            <div class="item margin-l">
+              <label for="user-email">Email: </label>
+                <input id="user-email" type="email" name="email" required>
+              
               
             </div>
-             
-           </div>
-          <div class="tot-group">
-           <div class="small-size">
-               <label for="user-message">Message:</label>
-              <textarea id="user-message" name="message"></textarea>
-              <button type="submit">Submit</button>
-             </div>
-          </div>
-           </form>
-          <br>
-           
-            <div class="flex-group">
-            <div class="flex-item">
-              <a href="https://www.linkedin.com/in/shengyang-zhou-698048ab/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
-            </div>
-            <div class="flex-item">
-              <a href="https://www.facebook.com/zousengp" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
-            </div>
-            <div class="flex-item">
-              <a href="https://github.com/ysz951?tab=repositories" target="_blank"><img src="images/github.png" alt="github"></a>
-            </div>
             
           </div>
             
-        
-
-        </section>
+          </div>
+        <div class="tot-group">
+          <div class="small-size">
+              <label for="user-message">Message:</label>
+            <textarea id="user-message" name="message"></textarea>
+            <button type="submit">Submit</button>
+            </div>
+        </div>
+          </form>
+          
+          <div class="flex-group">
+          <div class="flex-item">
+            <a class="contact-icon" href="https://www.linkedin.com/in/shengyang-zhou-698048ab/" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+              <span> LinkedIn</span>
+            </a>
+          </div>
+          <div class="flex-item">
+            <a class="contact-icon" href="https://github.com/ysz951?tab=repositories" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+              <span> github</span>
+            </a>
+          </div>
+          
+        </div>
+      </section>
     
 
     </main>
     <!-- footer -->
     <footer class="site-footer"> 
             <div id="footer-content">
-              <p>shengyang Zhou <span id="year">@ 2020</span> </p>
+              <p><span class="white">Shengyang Zhou</span> <span id="year">@ 2020</span> </p>
             </div>
           
     </footer>
+    <!-- <div class="top-button">
+      <button id="myBtn" class="cusor">TOP</button>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
