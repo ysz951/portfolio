@@ -466,6 +466,9 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 500px) {
+  .profile-image-tot h3, h4, li{
+    font-size: large;
+  }
   .project-link {
     display: flex;
     flex-direction: row;
