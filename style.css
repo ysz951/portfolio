@@ -11,7 +11,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* color:#FFF; */
-  background:rgb(245, 245, 245);
+  background:rgb(207, 207, 207);
   font-family: 'Source Sans Pro', sans-serif; 
 }
 
@@ -37,7 +37,7 @@ h2 {
 
   /* ---navigation bar--- */
 header{
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(58, 77, 67);
   text-align: center;
   color: #fff;
   font-family: Futura;
@@ -52,7 +52,7 @@ header{
 
 
 header h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(219, 219, 219);
   text-align: center;
   margin-bottom: 0;
   /* margin-left: 40px; */
@@ -80,7 +80,7 @@ header nav {
 
 
 #menu p {
-  color: black;
+  color: rgb(219, 219, 219);
   margin: 0;
   text-decoration: none;
   padding: 0 20px 0 0;
@@ -111,14 +111,10 @@ header nav {
 
 
 #Contact{
-  /* margin-top:40px; */
-  /* border: 1px solid rgb(124, 36, 36); */
+  padding: 20px;
 }
 
 
-/* p{
-  overflow-wrap: wrap;
-} */
 
 /*-- footer-- */
 .site-footer{
@@ -201,9 +197,10 @@ a {
 }
 
 .btn{
-  background-color: rgb(42, 107, 150);
-  color: white;
+  background-color: rgb(183, 179, 190);
+  color:rgb(26, 26, 26);
   font-size: 14px;
+  font-weight: bold;
     padding: 10px 20px;
    border-radius: 10px;
    text-transform: uppercase;
@@ -213,7 +210,8 @@ a {
 .btn:hover{
   opacity: 0.9;
   /* box-shadow: 0px 0px -10px -5px rgba(0, 0, 0, 0.5); */
-  background-color: rgb(150, 20, 80);
+  background-color: rgb(71, 64, 67);
+  color: white;
   align-content: flex-end;
 }
 
@@ -301,6 +299,14 @@ a {
 .project-image {
   display: flex;
   flex-direction: column;
+  border-radius: 20px 5px;
+  background-color: rgb(208, 234, 243);
+  margin-bottom: 20px;
+}
+
+.project-image:last-of-type{
+  margin-bottom: 0;
+  /* padding-bottom: 20px; */
 }
 
 .project-image p {
@@ -336,13 +342,6 @@ a {
   background-color: rgb(150, 20, 80);
 }
 
-
-.project-image{
-  border-radius: 20px 5px;
-  background-color: rgb(208, 234, 243);
-  margin-bottom: 20px;
-}
-
 /*--------- contact -------*/
   
 form {
@@ -351,6 +350,7 @@ form {
 }
 
 .contact-label{
+  font-size: larger;
   color:rgb(200, 212, 219);
 }
 
@@ -359,7 +359,9 @@ form textarea {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
-  border: 1px solid black
+  background-color: rgb(196, 196, 196);
+  /* border: 1px solid black; */
+
 }
 
 form textarea {
@@ -633,6 +635,7 @@ input[type=submit] {
   /*-------- Project section ---------*/
   #Project {
     padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .project-descib {
@@ -683,11 +686,6 @@ input[type=submit] {
   #Contact {
     padding-top: 20px;
   }
-
-  .contact-label{
-    font-size: larger;
-  }
-
   .contact-icon{
     font-size: larger;
   }
