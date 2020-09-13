@@ -111,7 +111,8 @@ header nav {
 
 
 #Contact{
-  padding-top:40px;
+  /* margin-top:40px; */
+  /* border: 1px solid rgb(124, 36, 36); */
 }
 
 
@@ -120,11 +121,14 @@ header nav {
 } */
 
 /*-- footer-- */
+.site-footer{
+  background: #464646;
+}
 
 #footer-content{
-  background: #000000;
+  
   font-size: 10px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: 'Josefin Sans', sans-serif;
   margin:0;
   padding:5px 0;
@@ -197,17 +201,19 @@ a {
 }
 
 .btn{
-  background-color: #FEE2B3;
+  background-color: rgb(42, 107, 150);
+  color: white;
   font-size: 14px;
-    padding: 15px 30px;
+    padding: 10px 20px;
    border-radius: 10px;
    text-transform: uppercase;
    cursor:pointer;
 }
 
 .btn:hover{
-  opacity: 0.8;
-  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  /* box-shadow: 0px 0px -10px -5px rgba(0, 0, 0, 0.5); */
+  background-color: rgb(150, 20, 80);
   align-content: flex-end;
 }
 
@@ -344,9 +350,14 @@ form {
   /* Fixed small sizing issue on the right */
 }
 
+.contact-label{
+  color:rgb(200, 212, 219);
+}
+
 form input, 
 form textarea {
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 20px;
   border: 1px solid black
 }
@@ -361,7 +372,8 @@ form textarea {
 }
 
 .contact-icon{
-  color:rgb(42, 107, 150);
+  
+  /* color:rgb(200, 212, 219); */
   display: flex;
   align-items: center;
 }
@@ -411,7 +423,7 @@ input[type=submit] {
 }
 
 .darkGreen{
-  color:#09380d;
+  color:#11811a;
 }
 
 .darkBrown{
@@ -423,7 +435,7 @@ input[type=submit] {
 
 .darkRed{
 
-  color: rgb(53, 14, 14);
+  color: rgb(124, 36, 36);
 
 }
 
@@ -444,10 +456,6 @@ input[type=submit] {
   color: rgb(88, 79, 79);
 }
 
-#year{
-
-  color: #ff0015;
-}
  
 /*----------- flex setting ----------*/
 .flex-group{
@@ -478,6 +486,10 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 500px) {
+  .section-title{
+    font-size: 32px;
+  }
+
   .profile-image-tot h3, h4, li{
     font-size: large;
   }
@@ -669,7 +681,11 @@ input[type=submit] {
 
 
   #Contact {
-    padding-top: 10px;
+    padding-top: 20px;
+  }
+
+  .contact-label{
+    font-size: larger;
   }
 
   .contact-icon{

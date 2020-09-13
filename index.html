@@ -42,7 +42,7 @@
   <main class="wrapper">
     <!-- about section -->
     <section id="About">
-      <h2 class="red">About Me</h2>
+      <h2 class="red section-title">About Me</h2>
       <div class="profile-image-tot">
         <div class="profile-image group">
           <div class="item align-center">
@@ -80,19 +80,17 @@
 
     <!-- portfolio section -->
     <section id="Project">
-      <h2 class="red">Projects</h2>
+      <h2 class="red section-title">Projects</h2>
       <div class="project-image">
         <h3>Enjoy Cook</h3>
-        <p>Full-stack online recipes search & share app.</p>
+        <p class="darkRed">Full-stack online recipes search & share app.</p>
         <div class="align-project">
           <a href="https://enjoy-cook-app.vercel.app/" target="_blank"><img src="images/enjoy-cook.png"
               alt="project" /></a>
 
         </div>
         <div class="project-descib">
-
-          
-          <p>This app was designed for people who intend to make food at home and can't find a good recipe. With this app is easy to find and share recipes</p>
+          <p>This app was designed for people who intend to make food at home and can't find a good recipe. With this app is easy to find recipes and post your comments.</p>
           <p class="Futura Italic">React, Node.js, RESTful API and Postgres SQL</p>
           <ul class="project-link">
             <li><a href="https://github.com/ysz951/enjoy-cook-app" class="Futura repo-link">FRONT-END REPO</a></li>
@@ -103,14 +101,14 @@
 
       <div class="project-image">
         <h3>Don't Forget</h3>
+        <p class="darkRed">A personal shopping memo app, help user not forget oncoming shopping items.</p>
         <div class="align-project">
           <a href="https://enjoy-cook-app.vercel.app/" target="_blank"><img src="images/dont-forget.png"
               alt="project" /></a>
 
         </div>
-        <div class="project-descib">
-
-          <p>A personal shopping memo app, help user not forget oncoming shopping items.</p>
+        <div class="project-descib">     
+          <p>This app was designed for users who want to record in-store items when shopping. All out of store items can be added to Next time list automatically.</p>
           <p class="Futura Italic">React, Node.js, RESTful API and Postgres SQL</p>
           <ul class="project-link">
             <li><a href="https://github.com/ysz951/dont-forget-app" class="Futura repo-link">FRONT-END REPO</a></li>
@@ -120,14 +118,14 @@
       </div>
       <div class="project-image">
         <h3>Global Venue Finder</h3>
+        <p class="darkRed">An online venue search application.</p>
         <div class="align-project">
           <a href="https://lookforvenues.co/" target="_blank"><img src="images/global-venue-finder.png"
               alt="project" /></a>
 
         </div>
         <div class="project-descib">
-          <p>An online venue search application. Users can search for the venue they are interested in and filter
-            results by inputting detailed parameters.</p>
+          <p>Still looking for the hotel, restaurant, shop and entertainment venues? This app can help you find the right place. No specified country name is needed.</p>
           <p class="Futura Italic">HTML5, CSS3, JavaScript with jQuery. Google & Foursquare API.</p>
           <ul class="project-link">
             <li><a href="https://github.com/ysz951/Globa-Venue-Finder" class="Futura repo-link">FRONT-END REPO</a></li>
@@ -136,27 +134,83 @@
       </div>
     </section>
     <!-- contact section -->
-    <section id="Contact">
+    <!-- <section id="Contact">
 
-      <h2 class="red">Contact</h2>
+      <h2 class="red section-title">Contact</h2>
       <form action="https://formspree.io/shengyang_zhou@hotmail.com" method="POST">
         <div class="tot-group">
           <div class="group small-size">
             <div class="item margin-r">
-              <label for="user-name">
+              <label for="user-name" class="contact-label">
                 Your Name:
               </label>
               <input id="user-name" type="text" name="name" required>
             </div>
             <div class="item margin-l">
-              <label for="user-email">Email: </label>
+              <label for="user-email" class="contact-label">Email: </label>
               <input id="user-email" type="email" name="email" required>
             </div>
           </div>
         </div>
         <div class="tot-group">
           <div class="small-size">
-            <label for="user-message">Message:</label>
+            <label for="user-message" class="contact-label">Message:</label>
+            <textarea id="user-message" name="message"></textarea>
+            <div class="submit-btn-group">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="flex-group">
+        <div class="flex-item">
+          <a class="contact-icon" href="mailto:shengyang_zhou@hotmail.com">
+            <i class="fas fa-envelope fa-2x"></i>
+            <span> Mail</span>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a class="contact-icon" href="https://www.linkedin.com/in/shengyang-zhou-698048ab/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+            <span> LinkedIn</span>
+          </a>
+        </div>
+        <div class="flex-item">
+          <a class="contact-icon" href="https://github.com/ysz951?tab=repositories" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+            <span> Github</span>
+          </a>
+        </div>
+
+      </div>
+    </section> -->
+
+
+  </main>
+  <!-- footer -->
+  <footer class="site-footer">
+    <section id="Contact">
+
+      <!-- <h2 class="red section-title">Contact</h2> -->
+      <form action="https://formspree.io/shengyang_zhou@hotmail.com" method="POST">
+        <div class="tot-group">
+          <div class="group small-size">
+            <div class="item margin-r">
+              <label for="user-name" class="contact-label">
+                Your Name:
+              </label>
+              <input id="user-name" type="text" name="name" required>
+            </div>
+            <div class="item margin-l">
+              <label for="user-email" class="contact-label">Email: </label>
+              <input id="user-email" type="email" name="email" required>
+            </div>
+          </div>
+        </div>
+        <div class="tot-group">
+          <div class="small-size">
+            <label for="user-message" class="contact-label">Message:</label>
             <textarea id="user-message" name="message"></textarea>
             <div class="submit-btn-group">
               <button class="btn" type="submit">Submit</button>
@@ -187,13 +241,8 @@
 
       </div>
     </section>
-
-
-  </main>
-  <!-- footer -->
-  <footer class="site-footer">
     <div id="footer-content">
-      <p><span class="white">Shengyang Zhou</span> <span id="year">@ 2020</span> </p>
+      <p><span class="white">SHENGYANG ZHOU @ 2020 </p>
     </div>
 
   </footer>
