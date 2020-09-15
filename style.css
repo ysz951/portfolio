@@ -487,6 +487,9 @@ input[type=submit] {
   height: 150px;
 }
 
+
+grammarly-extension { display: none; }
+
 @media screen and (min-width: 500px) {
   .section-title{
     font-size: 32px;
