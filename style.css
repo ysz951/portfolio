@@ -511,7 +511,8 @@ grammarly-extension { display: none; }
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  
+    max-width: 800px;
+    margin: 20px auto 10px;
   }
 }
 
