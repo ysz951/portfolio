@@ -20,7 +20,7 @@ function goProject() {
 function goContact() {
     $('.contact_nav').on('click', function(){
         $('html, body').animate({
-        scrollTop: $("#Contact").offset().top - 50
+        scrollTop: $(".site-footer").offset().top - 50
     }, 500);
     })   
 }

@@ -106,11 +106,13 @@ header nav {
 
 #Project{
   padding-top:50px;
+  /* padding-bottom: 20px; */
 }
 
 
 
 #Contact{
+  background: #464646;
   padding: 20px;
 }
 
@@ -118,7 +120,7 @@ header nav {
 
 /*-- footer-- */
 .site-footer{
-  background: #464646;
+  padding-top: 40px;
 }
 
 #footer-content{
@@ -132,6 +134,7 @@ header nav {
 #footer-content p{
   margin:0;
   text-align: center;
+  color: white;
 }
  /* -------------group item-------- */
 .group{
