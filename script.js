@@ -8,6 +8,15 @@ function goAbout() {
     
 }
 
+function openMenu() {
+    $('.menu_btn').on('click', function(){
+        $('.header_name_menu').css({"margin-bottom": 0});
+        $('header nav').css({"display": "flex"});
+        $('.menu_btn').addClass('hidden')
+        $('.close_menu_btn').removeClass('hidden');
+    })
+}
+
 function goProject() {
     $('.project_nav').on('click', function(){
         $('html, body').animate({
@@ -30,6 +39,7 @@ function mainFunc(){
     goAbout();
     goProject();
     goContact();
+    openMenu();
   }
   
   $(mainFunc);
