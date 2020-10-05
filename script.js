@@ -10,10 +10,19 @@ function goAbout() {
 
 function openMenu() {
     $('.menu_btn').on('click', function(){
-        $('.header_name_menu').css({"margin-bottom": 0});
-        $('header nav').css({"display": "flex"});
+        $('.header_name_menu').css("margin-bottom", 0);
+        $('.header_nav').removeClass('hidden');
         $('.menu_btn').addClass('hidden')
         $('.close_menu_btn').removeClass('hidden');
+    })
+}
+
+function closeMenu() {
+    $('.close_menu_btn').on('click', function(){
+        $('.header_name_menu').css("margin-bottom", "20px");
+        $('.header_nav').addClass('hidden');
+        $('.menu_btn').removeClass('hidden')
+        $('.close_menu_btn').addClass('hidden');
     })
 }
 
@@ -34,12 +43,26 @@ function goContact() {
     })   
 }
 
+function viewport() {
+    $( window ).resize(function() {
+        if($(window).width() < 800) {
+            $('.header_name_menu').css("margin-bottom", "20px");
+        }
+        else {
+            $('.header_name_menu').css("margin-bottom", "0");
+        }
+    })
+    
+}
+
  // main function
 function mainFunc(){
     goAbout();
     goProject();
     goContact();
     openMenu();
+    closeMenu();
+    viewport();
   }
   
   $(mainFunc);
