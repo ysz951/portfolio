@@ -50,6 +50,13 @@ header{
   z-index:10;
 }
 
+.sub_header {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+
+
 .header_name_menu{
   display: flex;
   align-items: center;
@@ -548,10 +555,13 @@ grammarly-extension { display: none; }
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    /* max-width: 1200px; */
     /* padding-top:0; */
    
   }
   
+  
+
   .hidden{
     display: initial;
   }
